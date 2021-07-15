@@ -1,0 +1,447 @@
+/********************************** GENERAL *************************************/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+/********************************** NAVIGATION BAR *************************************/
+
+nav {
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 20px 10px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+nav a {
+  float: left;
+  text-align: right;
+  padding: 12px;
+  font-size: calc(0.5rem + 0.5vw); /*15px*/
+  color: black;
+  line-height: 10px;
+  border-radius: 10px;
+}
+nav a.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+nav a.active {
+  background-color: #f6d601;
+  border-radius: 50px;
+}
+.nav__right {
+  float: right;
+  font-weight: lighter;
+  font-size: 10px;
+  display: inline-table;
+  padding: 1vw;
+}
+.nav__right:hover {
+  background-color: #f6d601;
+  border-radius: 60px;
+}
+
+/********************************** ABOUT CONTAINER *************************************/
+
+.about-container {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 104vh;
+}
+.about-container h2 {
+  color: #ffffff;
+  font-size: calc(4rem + 1vw); /*78px*/
+  padding-top: 132px;
+  padding-bottom: 45px;
+}
+.about-container h3 {
+  color: #f6d601;
+  font-size: calc(2rem + 0.8vw); /*43px*/
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0px;
+}
+.about-container h3.white {
+  color: #ffffff;
+}
+.about-container h6 {
+  /*p.about-container__description */
+  color: #ffffff;
+  font-size: calc(0.5rem + 0.8vw); /*18px*/
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-bottom: 13vh;
+  padding-top: 10px;
+}
+.about-container a {
+  /* .about-container__button   */
+  font-size: calc(0.5rem + 0.5vw); /*17px*/
+  color: black;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 17px 63px;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: bold;
+}
+.about-container a:hover {
+  /*   background-color: #ffee7a; */
+  background-color: #272525;
+  color: #f6d601;
+  font-weight: 100;
+}
+
+/********************************** CAR TYPES CONTAINER *************************************/
+
+.variety-container {
+  background-color: #ffffff;
+  background-size: cover;
+  /* height: 104vh; */
+}
+.variety-container h2 {
+  /*.car-types-container__title*/
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin: 0px;
+  font-size: calc(2.3rem + 1vw); /*51px*/
+  padding-top: 60px;
+}
+.variety-container h5 {
+  /* variety-container__description */
+  font-size: calc(0.3rem + 1vw); /*18px*/
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 10px;
+}
+.variety-container img {
+  width: 30vw;
+}
+.variety-container .cars-names-flex {
+  background-color: #f6d601;
+  font-weight: bold;
+  font-size: calc(1rem + 1vw); /*30px*/
+  display: inline-block;
+  display: inline-table;
+  width: 100%;
+  margin-top: 5%;
+  padding: 1.5%;
+  outline: #f6d601 solid 10px;
+  /* display: none; */
+}
+.child-flex-hundai {
+  order: 0;
+  /* display: none; */
+}
+.child-flex-audi {
+  order: 1;
+  /* display: none; */
+}
+.child-flex-bmw {
+  order: 2;
+  /* display: none; */
+}
+.parent-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 6% 0 9%;
+  align-items: flex-end;
+  justify-content: center;
+  /* display: none; */
+  flex-wrap: nowrap;
+}
+
+/********************************** FIND CAR FORM CONTAINER *************************************/
+
+.form-container {
+  background-image: url("../images/bg.jpg");
+  height: 124vh;
+  background-size: cover;
+  position: relative;
+}
+.form-container form {
+  position: relative;
+  float: right;
+  background-color: #ffffff;
+  color: #000000;
+  width: 40vw; /*35vw*/
+  font-size: calc(1rem + 1vw);
+  height: 80%;
+  right: 4%;
+  top: 100px;
+}
+.form-container label {
+  padding: 5% 2vw 0;
+  display: block;
+  text-align: left;
+  width: max-content;
+}
+.form-container select,
+textarea {
+  padding: 2vh 0 2vh 0;
+  width: 90%;
+  height: 7%;
+  display: block;
+  text-align: left;
+  margin: 2vh 2vw 0;
+  border: solid 1px #acacac;
+  font-size: calc(0.5rem + 0.9vw);
+  color: #acacac;
+}
+.form-container h2 {
+  font-size: calc(1.875rem + 1vw);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3vw 0 0.5vw;
+}
+.form-container input {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1.5% 7%;
+  border: 1px solid black;
+  margin: 4vh 4vw;
+  font-size: 20px;
+}
+.form-container input:hover {
+  cursor: pointer;
+  cursor: pointer;
+  color: #f6d601;
+  background-color: #272525;
+}
+
+/********************************** WHY CHOOSE US CONTAINER *************************************/
+
+.choose-us-container {
+  background-color: #ffffff;
+  /* outline: #414141 solid 5px; */
+  border-bottom: #414141 solid 5px;
+  height: fit-content;
+  /* padding: 100px 0; */
+  padding-bottom: 10%;
+}
+.choose-us-container h2 {
+  text-transform: uppercase;
+  color: #414141;
+  font-weight: bold;
+  font-size: calc(2rem + 1.3vw); /*50px*/
+  padding: 100px 0 30px;
+}
+.choose-us-container h5 {
+  color: #414141;
+  font-size: calc(0.5rem + 0.9vw); /*20px*/
+  padding: 0 16%; /*240px*/
+}
+.choose-us-container .circle {
+  color: #ffffff;
+  background-color: #414141;
+  border: #f6d601 solid 5px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  padding: 25px;
+  margin: 35px 47%;
+  font-size: calc(0.5rem + 0.7vw); /*16px*/
+}
+
+/********************************** CALL NOW CONTAINER *************************************/
+
+.call-now-container {
+  background-color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 65px;
+}
+.call-now-container h2 {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: calc(2rem + 3vw);
+}
+.call-now-container h3 {
+  color: #414141;
+  padding: 5px 0 35px;
+  font-size: calc(2rem + 2vw);
+}
+.call-now-container h5 {
+  padding: 10px;
+  color: #414141;
+  font-size: calc(0.8rem + 2vw);
+}
+.call-now-container span {
+  color: #f6d601;
+}
+
+/********************************** FOOTER *************************************/
+
+footer {
+  background-color: #414141;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 25px;
+  font-size: calc(0.35rem + 1vw); /*20px*/
+}
+
+/********************************** MEDIA QUERIES MOBILE M *************************************/
+
+@media screen and (max-width: 425px) {
+  nav {
+    background-color: #ffffff;
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+  }
+  nav a {
+    text-align: right;
+    padding: 1vw;
+    font-size: 2.6vw;
+    line-height: 15px;
+  }
+
+  .about-container {
+    height: 70vh;
+  }
+  .about-container h2 {
+    color: #ffffff;
+    font-size: 13vw;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .about-container h3 {
+    font-size: 8vw;
+    padding-bottom: 20px;
+  }
+  .about-container h6 {
+    font-size: 3.5vw;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 15%;
+    padding-top: 5%;
+  }
+  .about-container a {
+    font-size: 4vw;
+    padding: 17px 14%;
+  }
+
+  .variety-container {
+    background-size: cover;
+    height: 98vh;
+  }
+  .variety-container h2 {
+    font-size: 10vw;
+    padding: 6% 2%;
+  }
+  .variety-container h5 {
+    font-size: 4vw;
+    padding: 0 10% 2%;
+  }
+
+  .variety-container img {
+    object-fit: contain;
+    width: 60vw;
+    height: 19vh;
+  }
+  .variety-container .cars-names-flex {
+    background-color: #f6d601;
+    font-weight: bold;
+    font-size: calc(1rem + 1vw); /*30px*/
+    display: inline-block;
+    display: inline-table;
+    width: 100%;
+    margin-top: 0;
+    padding: 1.5%;
+    outline: #f6d601 solid 10px;
+    /* display: none; */
+  }
+  .child-flex-hundai {
+    order: 0;
+    /* display: none; */
+  }
+  .child-flex-audi {
+    order: 1;
+    /* display: none; */
+  }
+  .child-flex-bmw {
+    order: 2;
+    /* display: none; */
+  }
+  .parent-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 0 9%;
+    align-items: center;
+    /* display: none; */
+    /*   flex-wrap: nowrap; */
+  }
+
+  .form-container {
+    height: 80vh;
+    background-size: cover;
+  }
+  .form-container form {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    font-size: 5vw;
+    height: 90%;
+    right: 5%;
+    top: 5%;
+  }
+  .form-container select,
+  textarea {
+    padding: 1vh 0 1vh;
+    width: 95%;
+    font-size: calc(0.5rem + 0.9vw);
+  }
+  .form-container h2 {
+    font-size: 10vw;
+    padding: 7vw 0 0.5vw;
+  }
+
+  .choose-us-container {
+    outline: #414141 solid 5px;
+    height: 82vh;
+  }
+  .choose-us-container h2 {
+    font-size: 10vw;
+    padding: 15% 0 10%;
+  }
+  .choose-us-container h5 {
+    font-size: 4vw;
+    padding: 0 13%;
+  }
+  .choose-us-container .circle {
+    padding: 25px;
+    margin: 35px 40%;
+    font-size: 4vw;
+  }
+
+  .call-now-container {
+    padding: 5%;
+  }
+  .call-now-container h2 {
+    font-size: 11vw;
+  }
+  .call-now-container h3 {
+    padding: 2% 0 6%;
+    font-size: 7vw;
+  }
+  .call-now-container h5 {
+    padding: 1%;
+    font-size: 3vw;
+  }
+
+  footer {
+    padding: 2%;
+    font-size: 3vw;
+  }
+}
